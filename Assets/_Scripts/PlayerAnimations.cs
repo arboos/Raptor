@@ -7,6 +7,8 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour
 {
     public Animator PlayerAnimator { get; private set; }
+
+    [SerializeField] private GameObject flame;
     
     private void Start()
     {
@@ -41,6 +43,15 @@ public class PlayerAnimations : MonoBehaviour
             {
                 PlayerAnimator.SetBool("Moving", false);
                 PlayerInfo.Instance.PlayerSpriteRenderer.flipX = false;
+            }
+
+            if (InputVector.y > 0.1)
+            {
+                flame.SetActive(true);
+            }
+            else
+            {
+                flame.SetActive(false);
             }
         }
     }

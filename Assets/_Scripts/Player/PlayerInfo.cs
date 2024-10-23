@@ -13,6 +13,7 @@ public class PlayerInfo : MonoBehaviour
     [HideInInspector] public PlayerMovement playerMovement;
     [HideInInspector] public PlayerAnimations playerAnimations;
     [HideInInspector] public PlayerAttack playerAttack;
+    [HideInInspector] public PlayerHealth playerHealth;
 
 
     [HideInInspector] public SpriteRenderer PlayerSpriteRenderer;

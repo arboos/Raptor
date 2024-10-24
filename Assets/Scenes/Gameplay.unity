@@ -952,53 +952,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Waves:
   - enemies:
-    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
-      spawnPositionX: -5
-      directionX: 1
-    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
-      spawnPositionX: -3
-      directionX: 1
-    waitAfter: 4
-  - enemies:
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: -5
-      directionX: 1
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: 5
-      directionX: -1
-    waitAfter: 4
-  - enemies:
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: 3
-      directionX: -1
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: -3
-      directionX: 1
-    waitAfter: 4
-  - enemies:
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: 3
-      directionX: -1
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: -3
-      directionX: 1
-    waitAfter: 4
-  - enemies:
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: 3
-      directionX: -1
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: -3
-      directionX: 1
-    waitAfter: 4
-  - enemies:
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: 3
-      directionX: -1
-    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
-      spawnPositionX: -3
-      directionX: 1
-    waitAfter: 4
+    - prefab: {fileID: 0}
+      spawnPositionX: 0
+      directionX: 0
+    waitAfter: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -40,7 +40,6 @@ public class PlayerAnimations : MonoBehaviour
             else
             {
                 PlayerAnimator.SetBool("Moving", false);
-                PlayerInfo.Instance.PlayerSpriteRenderer.flipX = false;
             }
         }
     }

@@ -154,7 +154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionX: 1
-  speedY: -4
+  speedY: -2
+  lastPosition: {x: 0, y: 0, z: 0}
+  directionMovement: {x: 0, y: 0, z: 0}
   moveXDistance: 2
   delayToX: 1
   moveXTime: 4
@@ -173,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 6
   MaxHealth: 6
+  destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
 --- !u!61 &4326752585946231294
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14be3ae37cae4ba4fa59ed344ca58eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionX: 0
-  speedY: -2
+  directionX: 1
+  speedY: -4
   moveXDistance: 2
   delayToX: 1
   moveXTime: 4
@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b8c038a0ae9d4c9b4e4496f9113c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 8
-  MaxHealth: 8
+  Health: 6
+  MaxHealth: 6
 --- !u!61 &4326752585946231294
 BoxCollider2D:
   m_ObjectHideFlags: 0

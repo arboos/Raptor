@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionX: 0
-  speedY: -2
+  speedY: -8
   moveXDistance: 0
   delayToX: 0
   moveXTime: 0

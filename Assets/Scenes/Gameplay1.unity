@@ -1070,7 +1070,7 @@ MonoBehaviour:
     - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
       spawnPositionX: 3
       directionX: 0
-    - prefab: {fileID: 1122044673}
+    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
       spawnPositionX: -3
       directionX: 0
     waitAfter: 4

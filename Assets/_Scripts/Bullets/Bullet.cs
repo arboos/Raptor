@@ -28,14 +28,12 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag(comparesWith))
         {
-            print("Trigger");
             Hit(other);
         }
     }
 
     protected void Hit(Collider2D other)
     {
-        print("Hit");
         other.GetComponent<HealthSystem>().TakeDamage(damage);
         Destroy(gameObject);
     }

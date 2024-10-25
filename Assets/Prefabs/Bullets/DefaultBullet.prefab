@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 8
+  speed: 10
   lifeTime: 5
   comparesWith: Enemy
 --- !u!212 &1259001754153556111

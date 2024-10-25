@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class EnemyAttack : MonoBehaviour
 
     public int bulletCount;
     public float betweenBulletDistance;
+
+    public int collisionDamage;
     
     private void Update()
     {
@@ -21,4 +24,13 @@ public class EnemyAttack : MonoBehaviour
     }
 
     protected virtual void Shoot() {}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<HealthSystem>().TakeDamage(collisionDamage);
+            GetComponent<HealthSystem>().TakeDamage(1000);
+        }
+    }
 }

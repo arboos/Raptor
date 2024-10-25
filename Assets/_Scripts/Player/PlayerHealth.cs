@@ -18,4 +18,5 @@ public class PlayerHealth : HealthSystem
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
 }

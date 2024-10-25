@@ -186,7 +186,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 4.464211, y: 8}
+  m_Size: {x: 6, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 474011149}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0139, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -418,15 +418,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1966019751, guid: 47a208fab1404d442a17ac2f97362102, type: 3}
+  m_Sprite: {fileID: -1362793361, guid: 47a208fab1404d442a17ac2f97362102, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1118036267
@@ -651,7 +651,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.32, y: 0.32}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -952,21 +952,128 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Waves:
   - enemies:
-    - prefab: {fileID: 489747246275954399, guid: 233714e1425f424428336ab6892ad46a, type: 3}
-      spawnPositionX: -2
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 0
       directionX: 0
-    - prefab: {fileID: 489747246275954399, guid: 233714e1425f424428336ab6892ad46a, type: 3}
-      spawnPositionX: 2
-      directionX: 0
-    waitAfter: 6
+    waitAfter: 1
   - enemies:
-    - prefab: {fileID: 1150569586738026024, guid: 810b986ef6c33f846a1e65185922f3ad, type: 3}
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 1
+      directionX: 0
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -1
+      directionX: 0
+    waitAfter: 3
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -3
+      directionX: 0
+    waitAfter: 1
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -4
+      directionX: 0
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
       spawnPositionX: -2
       directionX: 1
-    - prefab: {fileID: 1150569586738026024, guid: 810b986ef6c33f846a1e65185922f3ad, type: 3}
-      spawnPositionX: 2
+    waitAfter: 3
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -2
       directionX: 1
-    waitAfter: 0
+    waitAfter: 1
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 4
+      directionX: 0
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 2
+      directionX: -1
+    waitAfter: 3
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -4
+      directionX: 0
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -3
+      directionX: 1
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -4
+      directionX: 0
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -3
+      directionX: 1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -1
+      directionX: 1
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 0
+      directionX: 1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -2
+      directionX: 1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -3
+      directionX: 0
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 2
+      directionX: -1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: -3
+      directionX: 0
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 1
+      directionX: -1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 3
+      directionX: -1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 4
+      directionX: 0
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 0
+      directionX: -1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 2
+      directionX: -1
+    - prefab: {fileID: 6878845639681869645, guid: bd473e9934337fc469ddd48772e687b6, type: 3}
+      spawnPositionX: 3
+      directionX: 0
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
+      spawnPositionX: 1
+      directionX: 0
+    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
+      spawnPositionX: -1
+      directionX: 0
+    waitAfter: 2
+  - enemies:
+    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
+      spawnPositionX: 8.5
+      directionX: 0
+    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
+      spawnPositionX: -8.5
+      directionX: 0
+    waitAfter: 1
+  - enemies:
+    - prefab: {fileID: 1874092617997230160, guid: 3b28a33f4333ec543a6cdced2c78d336, type: 3}
+      spawnPositionX: 3
+      directionX: 0
+    - prefab: {fileID: 1122044673}
+      spawnPositionX: -3
+      directionX: 0
+    waitAfter: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": 0,
           "directionX": 0
         }
@@ -14,12 +14,12 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": 3,
           "directionX": 1
         },
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": -3,
           "directionX": -1
         }

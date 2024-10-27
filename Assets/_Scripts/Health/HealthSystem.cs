@@ -5,9 +5,9 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     public int Health;
-    [SerializeField] private int MaxHealth;
+    [SerializeField] protected int MaxHealth;
 
-    public void TakeDamage(int count)
+    public virtual void TakeDamage(int count)
     {
         Health -= count;
         if (Health <= 0)
@@ -17,7 +17,7 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    public void TakeHeal(int count)
+    public virtual void TakeHeal(int count)
     {
         Health += count;
         if (Health >= MaxHealth)

@@ -1,21 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField] private Transform bulletSpawnPosition;
-    [SerializeField] private GameObject playerDefaultBullet;
-
-    public float shootCooldown;
-    private float currentShootCooldown;
-
-    public int bulletCount;
-    public float betweenBulletDistance;
-    
     private float value;
+
+    public List<Weapon> weaponList;
     
     private void Start()
     {
@@ -27,55 +21,65 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        currentShootCooldown -= Time.deltaTime;
+        ShootAllWeapons();
         
-        if(value > 0) Shoot(playerDefaultBullet, bulletCount, betweenBulletDistance);
+        foreach (var weapon in weaponList)
+        {
+            weapon.currentShootCooldown -= Time.deltaTime;
+        }
+        
+        print(value);
     }
     
     public void HandleAttackValue(InputAction.CallbackContext context)
     {
         value = context.ReadValue<float>();
     }
-    
-    public void Shoot(GameObject bulletPrefab, int bulletCount, float betweenBulletsDistance)
-    {
-        if (currentShootCooldown <= 0)
-        {
-            currentShootCooldown = shootCooldown;
-            for (int i = 0; i < bulletCount; i++)
-            {
-                GameObject spawnedBullet = Instantiate(bulletPrefab);
-                float startPosX = -(((bulletCount - 1) * betweenBulletsDistance)) / 2;
-                float bulletOffsetX = startPosX + i * betweenBulletsDistance;
 
-                Vector3 spawnPos = bulletSpawnPosition.position;
-                spawnPos.x += bulletOffsetX;
-
-                spawnedBullet.transform.position = spawnPos;
-            }
-        }
-    }
-    
-    public void Shoot()
+    private void ShootAllWeapons()
     {
-        GameObject bulletPrefab = playerDefaultBullet;
-        int bulletCountA = 2;
-        float betweenBulletsDistanceA = 0.5f;
+        if(value <= 0) return;
         
-        if (currentShootCooldown <= 0)
+        foreach (var weapon in weaponList)
         {
-            currentShootCooldown = shootCooldown;
-            for (int i = 0; i < bulletCount; i++)
-            {
-                GameObject spawnedBullet = Instantiate(bulletPrefab);
-                float startPosX = -(((bulletCountA - 1) * betweenBulletsDistanceA)) / 2;
-                float bulletOffsetX = startPosX + i * betweenBulletsDistanceA;
+            if(weapon.currentShootCooldown <= 0) Shoot(weapon);
+        }
+        
+    }
 
-                Vector3 spawnPos = bulletSpawnPosition.position;
-                spawnPos.x += bulletOffsetX;
+    private void Shoot(Weapon weapon)
+    {
+        print("shoot");
+        weapon.currentShootCooldown = weapon.shootCooldown;
+        
+        for (int i = 0; i < weapon.bulletCount; i++)
+        {
+            GameObject spawnedBullet = Instantiate(weapon.bulletPrefab);
+            float startPosX = -(((weapon.bulletCount - 1) * weapon.betweenBulletsDistance)) / 2;
+            float bulletOffsetX = startPosX + i * weapon.betweenBulletsDistance;
 
-                spawnedBullet.transform.position = spawnPos;
-            }
+            if (weapon.bulletSpawnPosition == null) weapon.bulletSpawnPosition = transform.GetChild(0);
+            Vector3 spawnPos = weapon.bulletSpawnPosition.position;
+            spawnPos.x += bulletOffsetX;
+
+            spawnedBullet.transform.position = spawnPos;
         }
     }
+    
+}
+
+[System.Serializable]
+public class Weapon
+{
+    public Transform bulletSpawnPosition;
+    
+    public GameObject bulletPrefab;
+
+    public float betweenBulletsDistance;
+    
+    public float shootCooldown;
+    public float currentShootCooldown;
+    
+    public int bulletCount;
+    
 }

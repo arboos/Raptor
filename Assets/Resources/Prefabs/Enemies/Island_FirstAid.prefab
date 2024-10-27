@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 10
   MaxHealth: 10
-  bonusToSpawn: {fileID: 1661332124815688502, guid: c6aad01f31f79ef42aaa52e0554b19e9, type: 3}
+  bonusToSpawn: {fileID: 3375060364924367720, guid: aa21103f4a5167545b91a9d92a4f9a33, type: 3}
 --- !u!50 &7750930261860483685
 Rigidbody2D:
   serializedVersion: 4

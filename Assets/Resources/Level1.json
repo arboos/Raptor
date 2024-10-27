@@ -281,8 +281,115 @@
       "enemies": [
         {
           "prefabName": "Enemy_Fat",
-          "spawnPositionX": -8,
-          "directionX": 2
+          "spawnPositionX": -6,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -4,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 6,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 4,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 4,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -4,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -1,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Island_FirstAid",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 6,
+          "directionX": -2
         },
         {
           "prefabName": "Enemy_Fat",
@@ -296,14 +403,57 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fat",
-          "spawnPositionX": 8,
-          "directionX": -2
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -4,
+          "directionX": 0
         },
         {
-          "prefabName": "Enemy_Fat",
-          "spawnPositionX": 6,
-          "directionX": -2
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -2,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 0,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -6,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -4,
+          "directionX": 1
         }
       ],
       "waitAfter": 2

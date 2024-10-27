@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyFatMovement : EnemyMovement
 {
@@ -16,6 +18,13 @@ public class EnemyFatMovement : EnemyMovement
 
     public float moveChance;
     
+
+    bool movingRight;
+
+    private void Awake()
+    {
+        movingRight = directionX > 0;
+    }
 
     private void FixedUpdate()
     {
@@ -36,11 +45,34 @@ public class EnemyFatMovement : EnemyMovement
     private IEnumerator MoveX()
     {
         movedXYet = true;
-
-        while (currentMoveXDistance < moveXDistance)
+        
+        while (movedXYet)
         {
-            currentMoveXDistance += (moveXDistance / moveXTime) * Time.deltaTime;
-            transform.position += new Vector3((moveXDistance / moveXTime) * Time.deltaTime * directionX, 0f, 0f);
+            if (movingRight)
+            {
+                while (currentMoveXDistance < moveXDistance)
+                {
+                    currentMoveXDistance += (moveXDistance / moveXTime) * Time.deltaTime;
+                    transform.position += new Vector3((moveXDistance / moveXTime) * Time.deltaTime * 1, 0f, 0f);
+                    yield return new WaitForEndOfFrame();
+                }
+
+                currentMoveXDistance = 0;
+                movingRight = !movingRight;
+            }
+            else
+            {
+                while (currentMoveXDistance < moveXDistance)
+                {
+                    currentMoveXDistance += (moveXDistance / moveXTime) * Time.deltaTime;
+                    transform.position += new Vector3((moveXDistance / moveXTime) * Time.deltaTime * -1, 0f, 0f);
+                    yield return new WaitForEndOfFrame();
+                }
+                
+                currentMoveXDistance = 0;
+                movingRight = !movingRight;
+            }
+            
             yield return new WaitForEndOfFrame();
         }
     }

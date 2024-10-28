@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionX: 0
-  speedY: -2
+  speedY: -4
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}
 --- !u!114 &8121478674452805348

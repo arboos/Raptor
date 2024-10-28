@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapMoving : MonoBehaviour
 {
-    [SerializeField] private float speedY;
+    public float speedY;
     
     
     void Update()

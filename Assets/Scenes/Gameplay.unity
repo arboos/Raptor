@@ -131,7 +131,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447743922}
-  - component: {fileID: 447743923}
   - component: {fileID: 447743924}
   m_Layer: 0
   m_Name: Map
@@ -149,25 +148,12 @@ Transform:
   m_GameObject: {fileID: 447743921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -10, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &447743923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447743921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 590c651316a86d6499787519c57574ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedY: -4
 --- !u!114 &447743924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,16 +166,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71f169e5b221daf4792d00f6237ed980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileParent: {fileID: 1338281520179481863, guid: b5ce046c4134f29419d2e1a41897647a, type: 3}
   waterTiles:
   - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
-  - {fileID: 6712386406701968011, guid: 52a6ae76116db4b40aa0541bc3fdb2b6, type: 3}
+  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
   - {fileID: 812933685730733617, guid: f0166038649cb9f4e9d281c52fe4313b, type: 3}
   - {fileID: 6548334666653307192, guid: 9e19e81a44497724db62c23847425dfc, type: 3}
-  seed: 666666
+  chunksSpawnedCount: 0
+  seed: 0
   zoom: 30
   spawnPosition: {fileID: 447743922}
-  X_length: 20
-  Y_length: 600
+  X_length: 30
+  Y_length: 12
+  spawnNewTiles: 1
+  chunksSpawned: []
 --- !u!1 &474011149
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +480,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &679259850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 679259851}
+  - component: {fileID: 679259852}
+  m_Layer: 0
+  m_Name: MapLegacy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &679259851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679259850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.701994, y: -8, z: -0.008715918}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679259852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679259850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a145e364a22da842a5d449fc01038ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileParent: {fileID: 1338281520179481863, guid: b5ce046c4134f29419d2e1a41897647a, type: 3}
+  waterTiles:
+  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
+  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
+  - {fileID: 812933685730733617, guid: f0166038649cb9f4e9d281c52fe4313b, type: 3}
+  - {fileID: 6548334666653307192, guid: 9e19e81a44497724db62c23847425dfc, type: 3}
+  chunksSpawnedCount: 0
+  seed: 0
+  zoom: 30
+  spawnPosition: {fileID: 679259851}
+  X_length: 30
+  Y_length: 600
+  spawnNewTiles: 1
+  chunksSpawned: []
 --- !u!1 &996531942
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,8 +940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd8b4800c7bc2f4f83efe7e6b262d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 40
-  MaxHealth: 40
+  Health: 600
+  MaxHealth: 600
   healthBar: {fileID: 1987266282}
 --- !u!114 &1118036277
 MonoBehaviour:
@@ -924,6 +972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1122044674}
   - component: {fileID: 1122044675}
+  - component: {fileID: 1122044676}
   m_Layer: 0
   m_Name: EnemyDestroyer
   m_TagString: Untagged
@@ -987,6 +1036,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &1122044676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122044673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4c53ac7ced3ef43a50f48e2222c11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163033174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,9 +1439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce70ded8c6f1324b803ecc14599db62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Waves:
-  - enemies: []
-    waitAfter: 0
+  Waves: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1394,3 +1453,4 @@ SceneRoots:
   - {fileID: 1067968323}
   - {fileID: 595164393}
   - {fileID: 447743922}
+  - {fileID: 679259851}

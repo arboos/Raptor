@@ -169,7 +169,7 @@ MonoBehaviour:
   tileParent: {fileID: 1338281520179481863, guid: b5ce046c4134f29419d2e1a41897647a, type: 3}
   waterTiles:
   - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
-  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
+  - {fileID: 6712386406701968011, guid: 52a6ae76116db4b40aa0541bc3fdb2b6, type: 3}
   - {fileID: 812933685730733617, guid: f0166038649cb9f4e9d281c52fe4313b, type: 3}
   - {fileID: 6548334666653307192, guid: 9e19e81a44497724db62c23847425dfc, type: 3}
   chunksSpawnedCount: 0
@@ -480,64 +480,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &679259850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 679259851}
-  - component: {fileID: 679259852}
-  m_Layer: 0
-  m_Name: MapLegacy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &679259851
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679259850}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.701994, y: -8, z: -0.008715918}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &679259852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679259850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a145e364a22da842a5d449fc01038ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileParent: {fileID: 1338281520179481863, guid: b5ce046c4134f29419d2e1a41897647a, type: 3}
-  waterTiles:
-  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
-  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
-  - {fileID: 812933685730733617, guid: f0166038649cb9f4e9d281c52fe4313b, type: 3}
-  - {fileID: 6548334666653307192, guid: 9e19e81a44497724db62c23847425dfc, type: 3}
-  chunksSpawnedCount: 0
-  seed: 0
-  zoom: 30
-  spawnPosition: {fileID: 679259851}
-  X_length: 30
-  Y_length: 600
-  spawnNewTiles: 1
-  chunksSpawned: []
 --- !u!1 &996531942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,4 +1395,3 @@ SceneRoots:
   - {fileID: 1067968323}
   - {fileID: 595164393}
   - {fileID: 447743922}
-  - {fileID: 679259851}

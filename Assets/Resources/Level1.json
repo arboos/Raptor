@@ -3,7 +3,7 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Island_Rocket",
           "spawnPositionX": 0,
           "directionX": 0
         }

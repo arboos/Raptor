@@ -9,7 +9,7 @@ public class Iceland_HealthSystem : HealthSystem
     
     protected override void Die()
     {
-        GetComponent<Animator>().SetBool("IsDead", true);
+        GetComponent<Animator>().SetBool("isDead", true);
 
         GameObject spawnedBonus = Instantiate(bonusToSpawn);
         spawnedBonus.transform.position = transform.position;

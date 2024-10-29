@@ -14,7 +14,6 @@ public class EnemySpawner : MonoBehaviour
     {
         ReadFile();
         StartCoroutine(Spawner());
-       
     }
     
     public void ReadFile()

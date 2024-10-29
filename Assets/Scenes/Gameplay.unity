@@ -174,7 +174,7 @@ MonoBehaviour:
   - {fileID: 6548334666653307192, guid: 9e19e81a44497724db62c23847425dfc, type: 3}
   chunksSpawnedCount: 0
   seed: 0
-  zoom: 80
+  zoom: 30
   spawnPosition: {fileID: 447743922}
   X_length: 30
   Y_length: 12

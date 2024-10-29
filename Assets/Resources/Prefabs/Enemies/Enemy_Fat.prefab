@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawnPosition: {fileID: 1406600555331933230}
   bulletPrefab: {fileID: 1606945261363030477, guid: 732500c93ba5ce346ad75ae1de5d43b2, type: 3}
-  shootCooldown: 5
+  shootCooldown: 2
   bulletCount: 4
   betweenBulletDistance: 0.75
   collisionDamage: 4
@@ -143,8 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b8c038a0ae9d4c9b4e4496f9113c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 12
-  MaxHealth: 12
+  Health: 10
+  MaxHealth: 10
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
 --- !u!61 &3868281679905415378
 BoxCollider2D:

@@ -123,14 +123,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa29e9165bc70842818652cc4472737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionX: 1
+  directionX: 0.5
   speedY: -2
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}
-  moveXDistance: 100
-  delayToX: 1.5
+  moveXDistance: 75
+  delayToX: 1
   moveXTime: 25
-  speedY_WhileMoveX: -2
+  speedY_WhileMoveX: -5
   moveChance: 0
 --- !u!114 &6696165610969977808
 MonoBehaviour:
@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b8c038a0ae9d4c9b4e4496f9113c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 12
-  MaxHealth: 12
+  Health: 8
+  MaxHealth: 8
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
 --- !u!61 &3725756861051564394
 BoxCollider2D:

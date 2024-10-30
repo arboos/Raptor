@@ -354,11 +354,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionX: 0
-  speedY: -6
+  speedY: -10
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}
   moveXDistance: 20
-  delayToX: 1
+  delayToX: 0.25
   moveXTime: 3
   moveChance: 0
 --- !u!95 &3600270301101116393

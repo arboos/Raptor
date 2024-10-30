@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319675132924296989}
   - component: {fileID: 4772475780975477302}
-  - component: {fileID: 8788116794409180917}
+  - component: {fileID: 4281597114128584225}
   m_Layer: 9
   m_Name: Tale
   m_TagString: Untagged
@@ -233,7 +233,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8788116794409180917
+--- !u!95 &4281597114128584225
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ Animator:
   m_GameObject: {fileID: 2262234692860314698}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2683b35590c07334e897c329f656edb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: b644318ffc6ea924d8e47f91aafcb7d2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

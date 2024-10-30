@@ -10,7 +10,8 @@ public class EnemyBombMovement : EnemyMovement
     
     private void Awake()
     {
-        direction = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(1.0f, 0.5f), 0f);
+        direction = transform.position - PlayerInfo.Instance.gameObject.transform.position;
+        direction.Normalize();
     }
 
     protected override void Move()

@@ -22,8 +22,6 @@ public class EnemyBombMovement : EnemyMovement
     
     protected override void Move()
     {
-        
-        
         Vector3 moveVector = direction * (Time.deltaTime * -speedY);
         transform.position += moveVector;
     }

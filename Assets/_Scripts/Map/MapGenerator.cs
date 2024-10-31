@@ -50,13 +50,13 @@ public class MapGenerator : MonoBehaviour
     {
         GameObject tileList = Instantiate(tileParent);
         tileList.transform.SetParent(transform);
-        tileList.transform.position = new Vector3(-(float)X_length / 2f, offsetY, 0f);
+        tileList.transform.position = new Vector3(-(float)X_length * 0.25f, offsetY, 0f);
 
         for (int i = 0; i < X_length; i++)
         {
-            for (int j = chunksSpawnedCount*Y_length; j < chunksSpawnedCount*Y_length+Y_length; j++)
+            for (int j = 0; j < Y_length; j++)
             {
-                n = Mathf.PerlinNoise((i + seed) / zoom, (j + seed) / zoom);
+                n = Mathf.PerlinNoise((i + seed) / zoom, (j + chunksSpawnedCount*Y_length + seed) / zoom);
 
                 if (n < 0.2f) // Самая низкая(глубокая) точка карты
                 {
@@ -100,13 +100,14 @@ public class MapGenerator : MonoBehaviour
     {
         GameObject tileList = Instantiate(tileParent);
         tileList.transform.SetParent(transform);
-        tileList.transform.position = new Vector3(-(float)X_length / 2f, transform.GetChild(2).transform.position.y + (float)Y_length/1f, 0f);
+        tileList.transform.position = new Vector3(-(float)X_length * 0.25f, transform.GetChild(2).transform.position.y + (float)Y_length/2f, 0f);
+        
 
         for (int i = 0; i < X_length; i++)
         {
-            for (int j = chunksSpawnedCount*Y_length; j < chunksSpawnedCount*Y_length+Y_length; j++)
+            for (int j = 0; j < Y_length; j++)
             {
-                n = Mathf.PerlinNoise((i + seed) / zoom, (j + seed) / zoom);
+                n = Mathf.PerlinNoise((i + seed) / zoom, (j + chunksSpawnedCount*Y_length + seed) / zoom);
 
                 if (n < 0.2f) // Самая низкая(глубокая) точка карты
                 {
@@ -149,9 +150,8 @@ public class MapGenerator : MonoBehaviour
 
     public void SpawnTile(int i, int j, GameObject tileList, GameObject prefab)
     {
-        GameObject spawnedTile = Instantiate(prefab,
-            new Vector3((float)i/2f, (float)j/2f-chunksSpawnedCount*Y_length, 0f) + tileList.transform.position,
-            Quaternion.Euler(0, 0, 0));
+        GameObject spawnedTile = Instantiate(prefab);
+        spawnedTile.transform.localPosition = new Vector3((float)i/2f, (float)j/2f, 0f) + tileList.transform.position;
         spawnedTile.gameObject.transform.SetParent(tileList.transform);
     }
 

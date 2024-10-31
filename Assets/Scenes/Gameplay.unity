@@ -1853,6 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves: []
+  json: {fileID: 4900000, guid: fa82c856a9b38de4293ffec74131d866, type: 3}
 --- !u!1 &2073729487
 GameObject:
   m_ObjectHideFlags: 0

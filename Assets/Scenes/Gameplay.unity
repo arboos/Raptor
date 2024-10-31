@@ -314,16 +314,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileParent: {fileID: 1338281520179481863, guid: b5ce046c4134f29419d2e1a41897647a, type: 3}
   waterTiles:
-  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
-  - {fileID: 6712386406701968011, guid: 52a6ae76116db4b40aa0541bc3fdb2b6, type: 3}
+  - {fileID: 4590510722690836816, guid: 4f9dac6f1a322354ea7e63e2ab3d2e75, type: 3}
+  - {fileID: 812933685730733617, guid: de026edf28419ff4389474d68b25aae2, type: 3}
+  - {fileID: 812933685730733617, guid: 5b172b032e3e88f479ec9034f574ff9b, type: 3}
   - {fileID: 812933685730733617, guid: f0166038649cb9f4e9d281c52fe4313b, type: 3}
+  - {fileID: 6712386406701968011, guid: 52a6ae76116db4b40aa0541bc3fdb2b6, type: 3}
+  - {fileID: 4590510722690836816, guid: c68684bee93c90f4f8cb063fe75fb181, type: 3}
   - {fileID: 6548334666653307192, guid: 9e19e81a44497724db62c23847425dfc, type: 3}
+  - {fileID: 6548334666653307192, guid: 22bf6ce0f6b71f140949ea2db6425c6d, type: 3}
   chunksSpawnedCount: 0
   seed: 0
   zoom: 30
   spawnPosition: {fileID: 447743922}
-  X_length: 30
-  Y_length: 12
+  X_length: 60
+  Y_length: 24
   spawnNewTiles: 1
   chunksSpawned: []
 --- !u!1 &474011149
@@ -813,7 +817,7 @@ Transform:
   m_GameObject: {fileID: 1118036265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 0}
+  m_LocalPosition: {x: -4.25, y: -3, z: 0}
   m_LocalScale: {x: 1.35, y: 1.35, z: 1.35}
   m_ConstrainProportionsScale: 1
   m_Children:

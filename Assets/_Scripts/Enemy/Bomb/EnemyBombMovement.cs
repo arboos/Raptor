@@ -10,13 +10,21 @@ public class EnemyBombMovement : EnemyMovement
     
     private void Awake()
     {
-        direction = transform.position - PlayerInfo.Instance.gameObject.transform.position;
-        direction.Normalize();
+        StartCoroutine(SetDirection());
     }
 
+    private IEnumerator SetDirection()
+    {
+        yield return new WaitForEndOfFrame();
+        direction = PlayerInfo.Instance.transform.position - transform.position;
+        direction.Normalize();
+    }
+    
     protected override void Move()
     {
-        Vector3 moveVector = direction * (Time.deltaTime * speedY);
+        
+        
+        Vector3 moveVector = direction * (Time.deltaTime * -speedY);
         transform.position += moveVector;
     }
 

@@ -58,21 +58,37 @@ public class MapGenerator : MonoBehaviour
             {
                 n = Mathf.PerlinNoise((i + seed) / zoom, (j + seed) / zoom);
 
-                if (n < 0.4f) // Самая низкая(глубокая) точка карты
+                if (n < 0.2f) // Самая низкая(глубокая) точка карты
                 {
                     SpawnTile(i, j, tileList, waterTiles[0]);
                 }
-                else if (n >= 0.4f && n < 0.6f)
+                else if (n >= 0.2f && n < 0.3f)
                 {
                     SpawnTile(i, j, tileList, waterTiles[1]);
                 }
-                else if (n >= 0.6f && n < 0.8f)
+                else if (n >= 0.3f && n < 0.4f)
                 {
                     SpawnTile(i, j, tileList, waterTiles[2]);
                 }
-                else // Самая высокая точка карты
+                else if (n >= 0.4f && n < 0.5f)
                 {
                     SpawnTile(i, j, tileList, waterTiles[3]);
+                }
+                else if (n >= 0.5f && n < 0.6f)
+                {
+                    SpawnTile(i, j, tileList, waterTiles[4]);
+                }
+                else if (n >= 0.6f && n < 0.7f)
+                {
+                    SpawnTile(i, j, tileList, waterTiles[5]);
+                }
+                else if (n >= 0.7f && n < 0.8f)
+                {
+                    SpawnTile(i, j, tileList, waterTiles[6]);
+                }
+                else // Самая высокая точка карты
+                {
+                    SpawnTile(i, j, tileList, waterTiles[7]);
                 }
             }
         }
@@ -92,21 +108,37 @@ public class MapGenerator : MonoBehaviour
             {
                 n = Mathf.PerlinNoise((i + seed) / zoom, (j + seed) / zoom);
 
-                if (n < 0.4f) // Самая низкая(глубокая) точка карты
+                if (n < 0.2f) // Самая низкая(глубокая) точка карты
                 {
                     SpawnTile(i, j, tileList, waterTiles[0]);
                 }
-                else if (n >= 0.4f && n < 0.6f)
+                else if (n >= 0.2f && n < 0.3f)
                 {
                     SpawnTile(i, j, tileList, waterTiles[1]);
                 }
-                else if (n >= 0.6f && n < 0.8f)
+                else if (n >= 0.3f && n < 0.4f)
                 {
                     SpawnTile(i, j, tileList, waterTiles[2]);
                 }
-                else // Самая высокая точка карты
+                else if (n >= 0.4f && n < 0.5f)
                 {
                     SpawnTile(i, j, tileList, waterTiles[3]);
+                }
+                else if (n >= 0.5f && n < 0.6f)
+                {
+                    SpawnTile(i, j, tileList, waterTiles[4]);
+                }
+                else if (n >= 0.6f && n < 0.7f)
+                {
+                    SpawnTile(i, j, tileList, waterTiles[5]);
+                }
+                else if (n >= 0.7f && n < 0.8f)
+                {
+                    SpawnTile(i, j, tileList, waterTiles[6]);
+                }
+                else // Самая высокая точка карты
+                {
+                    SpawnTile(i, j, tileList, waterTiles[7]);
                 }
             }
         }
@@ -118,7 +150,7 @@ public class MapGenerator : MonoBehaviour
     public void SpawnTile(int i, int j, GameObject tileList, GameObject prefab)
     {
         GameObject spawnedTile = Instantiate(prefab,
-            new Vector3(i, j-chunksSpawnedCount*Y_length, 0f) + tileList.transform.position,
+            new Vector3((float)i/2f, (float)j/2f-chunksSpawnedCount*Y_length, 0f) + tileList.transform.position,
             Quaternion.Euler(0, 0, 0));
         spawnedTile.gameObject.transform.SetParent(tileList.transform);
     }

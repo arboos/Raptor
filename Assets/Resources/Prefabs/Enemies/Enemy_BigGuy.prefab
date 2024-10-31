@@ -129,7 +129,7 @@ MonoBehaviour:
   shootCooldown: 2
   bulletCount: 4
   betweenBulletDistance: 1
-  collisionDamage: 10
+  collisionDamage: 4
   bulletSpeed: 6
 --- !u!114 &1697411325437851200
 MonoBehaviour:

@@ -109,7 +109,7 @@ MonoBehaviour:
   speedY: -6
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}
-  moveXDistance: 15
+  moveXDistance: 25
   delayToX: 0.5
   moveXTime: 5
   moveChance: 0

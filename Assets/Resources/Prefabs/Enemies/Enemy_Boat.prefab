@@ -139,7 +139,7 @@ MonoBehaviour:
   speedY: -1
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}
-  moveXDistance: 30
+  moveXDistance: 20
   delayToX: 1
   moveXTime: 8
   moveChance: 0
@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b8c038a0ae9d4c9b4e4496f9113c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 15
-  MaxHealth: 15
+  Health: 25
+  MaxHealth: 25
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
 --- !u!61 &3264292761047413219
 BoxCollider2D:

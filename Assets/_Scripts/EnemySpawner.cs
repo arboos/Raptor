@@ -11,6 +11,8 @@ public class EnemySpawner : MonoBehaviour
     //private string saveFile = "Assets/Resources/Prefabs/Level1.json";
     [SerializeField] private TextAsset json;
 
+    [SerializeField] private int startFrom;
+
     private void Start()
     {
         ReadFile();
@@ -36,17 +38,31 @@ public class EnemySpawner : MonoBehaviour
         
     public IEnumerator Spawner()
     {
-        foreach (var wave in Waves)
+        if (startFrom < 0)
         {
-            foreach (var enemy in wave.enemies)
+            startFrom = Waves.Count + startFrom;
+        }
+        for (int i = startFrom; i < Waves.Count; i++)
+        {
+            foreach (var enemy in Waves[i].enemies)
             {
                 GameObject spawnedEnemy = Instantiate(FindPrefabByName(enemy.prefabName));
                 spawnedEnemy.GetComponent<EnemyMovement>().directionX = enemy.directionX;
                 spawnedEnemy.transform.position = new Vector3(enemy.spawnPositionX, transform.position.y, transform.position.z);
             }
-
-            yield return new WaitForSeconds(wave.waitAfter);
+            yield return new WaitForSeconds(Waves[i].waitAfter);
         }
+        // foreach (var wave in Waves)
+        // {
+        //     foreach (var enemy in wave.enemies)
+        //     {
+        //         GameObject spawnedEnemy = Instantiate(FindPrefabByName(enemy.prefabName));
+        //         spawnedEnemy.GetComponent<EnemyMovement>().directionX = enemy.directionX;
+        //         spawnedEnemy.transform.position = new Vector3(enemy.spawnPositionX, transform.position.y, transform.position.z);
+        //     }
+        //
+        //     yield return new WaitForSeconds(wave.waitAfter);
+        // }
     }
 }
 

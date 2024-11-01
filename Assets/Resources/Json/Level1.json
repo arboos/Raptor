@@ -643,6 +643,27 @@
     {
       "enemies": [
         {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 5,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
           "prefabName": "Enemy_Boat",
           "spawnPositionX": 9,
           "directionX": -1
@@ -1907,6 +1928,38 @@
         {
           "prefabName": "Enemy_Heli",
           "spawnPositionX": -8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 1,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -1,
           "directionX": 0
         }
       ],

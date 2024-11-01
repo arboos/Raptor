@@ -54,6 +54,8 @@ public class PlayerAttack : MonoBehaviour
         for (int i = 0; i < weapon.bulletCount; i++)
         {
             GameObject spawnedBullet = Instantiate(weapon.bulletPrefab);
+            if (!weapon.bulletPrefab.GetComponent<Bullet>().globalPosition)
+                spawnedBullet.transform.SetParent(gameObject.transform);
             float startPosX = -(((weapon.bulletCount - 1) * weapon.betweenBulletsDistance)) / 2;
             float bulletOffsetX = startPosX + i * weapon.betweenBulletsDistance;
 

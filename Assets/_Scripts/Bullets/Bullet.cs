@@ -10,7 +10,10 @@ public class Bullet : MonoBehaviour
 
     public float lifeTime;
 
+    public bool destroyAfterHit = true;
+    public bool globalPosition = true;
     [SerializeField] private string comparesWith;
+    
 
     private void Awake()
     {
@@ -35,6 +38,6 @@ public class Bullet : MonoBehaviour
     protected void Hit(Collider2D other)
     {
         other.GetComponent<HealthSystem>().TakeDamage(damage);
-        Destroy(gameObject);
+        if(destroyAfterHit) Destroy(gameObject);
     }
 }

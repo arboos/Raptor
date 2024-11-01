@@ -1,4 +1,4 @@
-{
+ {
   "waves": [
     {
       "enemies": [
@@ -1990,7 +1990,7 @@
           "directionX": 1
         }
       ],
-      "waitAfter": 2
+      "waitAfter": 4
     },
 
     {

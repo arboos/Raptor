@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,8 +19,13 @@ public class PlayerHealth : HealthSystem
         }
     }
 
-    protected override void Die()
+    protected override async void Die()
     {
+        PlayerInfo.Instance.playerMovement.canMove = false;
+        SoundsBaseCollection.Instance.Death.Play();
+        
+        await UniTask.Delay(TimeSpan.FromSeconds(2f));
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

@@ -44,7 +44,6 @@ public class PlayerAttack : MonoBehaviour
         {
             if(weapon.currentShootCooldown <= 0) Shoot(weapon);
         }
-        
     }
 
     private void Shoot(Weapon weapon)

@@ -13,6 +13,7 @@ public class EnemyHealth : HealthSystem
             GameObject spawnedParticle = Instantiate(destroyParticle);
             spawnedParticle.transform.position = transform.position;
             spawnedParticle.GetComponent<SelfDestroy>().moveVector = GetComponent<EnemyMovement>().directionMovement;
+            SoundsBaseCollection.Instance.Explosion.Play();
         }
 
         Destroy(gameObject);

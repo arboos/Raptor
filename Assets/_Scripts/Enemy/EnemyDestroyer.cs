@@ -9,7 +9,7 @@ public class EnemyDestroyer : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            PlayerInfo.Instance.playerHealth.TakeDamage(1);
+            Destroy(other.gameObject);
         }
     }
 }

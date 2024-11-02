@@ -13,7 +13,7 @@ public class CastShadows : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _spriteRenderer.color = new Color(0f, 0f, 0f, 0.5f);
         transform.localScale *= 1.1f;
-        transform.localPosition = new Vector3(-0.5f, 0.3f, 0f);
+        transform.localPosition = new Vector3(-0.5f, -0.3f, 0f);
     }
 
     private void FixedUpdate()

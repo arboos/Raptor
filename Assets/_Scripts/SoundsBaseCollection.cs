@@ -16,9 +16,10 @@ public class SoundsBaseCollection : MonoBehaviour
     public AudioSource ButtonClick;
     
     [Header("Player")]
-    public AudioSource Collision;
+    public AudioSource Damage;
     public AudioSource Death;
     public AudioSource Explosion;
+    public AudioSource Heal;
     
     private void Awake()
     {

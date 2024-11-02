@@ -30,7 +30,6 @@ public class EnemyAttack : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<HealthSystem>().TakeDamage(collisionDamage);
-            SoundsBaseCollection.Instance.Collision.Play();
             GetComponent<HealthSystem>().TakeDamage(1000);
         }
     }

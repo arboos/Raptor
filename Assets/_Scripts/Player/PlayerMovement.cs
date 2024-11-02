@@ -30,7 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void HandleMovementVector(InputAction.CallbackContext context)
     {
-        InputVector = context.ReadValue<Vector2>();
+        if(canMove) InputVector = context.ReadValue<Vector2>();
+        else InputVector = Vector2.zero;
     }
 
     private void Move()

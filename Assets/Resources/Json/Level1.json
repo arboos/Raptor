@@ -4,17 +4,6 @@
       "enemies": [
         {
           "prefabName": "Enemy_Simple",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 1
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Simple",
           "spawnPositionX": 2,
           "directionX": 1
         },
@@ -658,7 +647,7 @@
           "directionX": 0
         }
       ],
-      "waitAfter": 4
+      "waitAfter": 3.5
     },
 
     {

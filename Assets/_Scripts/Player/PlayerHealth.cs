@@ -6,11 +6,13 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class PlayerHealth : HealthSystem
 {
 
     [SerializeField] private Image healthBar;
+    [SerializeField] private GameObject explosionPrefab;
 
     private Tween colorChangeTween = null;
     
@@ -26,7 +28,7 @@ public class PlayerHealth : HealthSystem
     {
         PlayerInfo.Instance.playerMovement.canMove = false;
         PlayerInfo.Instance.playerAttack.canShoot = false;
-        
+
         GameManager.Instance.EnemySpawner.gameObject.SetActive(false);
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
@@ -41,11 +43,26 @@ public class PlayerHealth : HealthSystem
             Destroy(bullet);
         }
         
+        
+        for (int i = 0; i < 20; i++)
+        {
+            GameObject spawnedEx = Instantiate(explosionPrefab);
+            spawnedEx.transform.localScale *= 1.2f;
+            explosionPrefab.transform.position = transform.position +
+                                                 new Vector3(Random.Range(-0.8f, 0.8f), Random.Range(-0.8f, 0.8f), 0);
+            spawnedEx.GetComponent<SpriteRenderer>().sortingOrder = 50;
+            SoundsBaseCollection.Instance.Explosion.Play();
+            await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
+        }
+
+        
         SoundsBaseCollection.Instance.Death.Play();
         
-        await UniTask.Delay(TimeSpan.FromSeconds(2f));
+        await UniTask.Delay(TimeSpan.FromSeconds(1f));
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        UIManager.Instance.LoseScreen.SetActive(true);
+        
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public override void TakeDamage(int count)

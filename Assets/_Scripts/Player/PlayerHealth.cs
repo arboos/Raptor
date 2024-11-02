@@ -25,6 +25,22 @@ public class PlayerHealth : HealthSystem
     protected override async void Die()
     {
         PlayerInfo.Instance.playerMovement.canMove = false;
+        PlayerInfo.Instance.playerAttack.canShoot = false;
+        
+        GameManager.Instance.EnemySpawner.gameObject.SetActive(false);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
+
+        foreach (var enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+        
+        foreach (var bullet in bullets)
+        {
+            Destroy(bullet);
+        }
+        
         SoundsBaseCollection.Instance.Death.Play();
         
         await UniTask.Delay(TimeSpan.FromSeconds(2f));

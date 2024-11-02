@@ -10,6 +10,8 @@ public class PlayerAttack : MonoBehaviour
     private float value;
 
     public List<Weapon> weaponList;
+
+    public bool canShoot = true;
     
     private void Start()
     {
@@ -21,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        ShootAllWeapons();
+        if(canShoot) ShootAllWeapons();
         
         foreach (var weapon in weaponList)
         {

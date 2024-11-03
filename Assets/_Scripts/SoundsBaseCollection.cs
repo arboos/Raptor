@@ -20,6 +20,7 @@ public class SoundsBaseCollection : MonoBehaviour
     public AudioSource Death;
     public AudioSource Explosion;
     public AudioSource Heal;
+    public AudioSource Coin;
     
     private void Awake()
     {

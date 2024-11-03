@@ -14,7 +14,7 @@ public class PlayerInfo : MonoBehaviour
     [HideInInspector] public PlayerAnimations playerAnimations;
     [HideInInspector] public PlayerAttack playerAttack;
     [HideInInspector] public PlayerHealth playerHealth;
-    
+    [HideInInspector] public PlayerEconomic playerEconomic;
     [HideInInspector] public SpriteRenderer PlayerSpriteRenderer;
     
     private void Awake()

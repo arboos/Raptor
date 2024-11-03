@@ -17,5 +17,4 @@ public class ShopItem : ScriptableObject
     public string name;
     public string info;
     public string characteristics;
-    
 }

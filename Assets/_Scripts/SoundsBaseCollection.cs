@@ -14,6 +14,8 @@ public class SoundsBaseCollection : MonoBehaviour
     
     [Header("UI")]
     public AudioSource ButtonClick;
+    public AudioSource Counter;
+    public AudioSource ToBattle;
     
     [Header("Player")]
     public AudioSource Damage;

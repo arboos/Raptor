@@ -33,7 +33,6 @@ public class PlayerInfo : MonoBehaviour
         }
         else
         {
-            Debug.LogError("More than one PlayerInfo on scene! GO.name = " + gameObject.name);
             Destroy(gameObject);
         }
     }
@@ -47,7 +46,6 @@ public class PlayerInfo : MonoBehaviour
     {
         if (arg1.buildIndex == currentSceneIndex)
         {
-            print("IFFFFFF CHAAAAANGED");
             transform.position = new Vector3(0f, -3f, 0f);
             playerEconomic.money = moneyInStart;
             playerAttack.canShoot = true;
@@ -57,12 +55,29 @@ public class PlayerInfo : MonoBehaviour
             {
                 playerAttack.weaponList.Remove(playerAttack.weaponList[i]);
             }
+            currentSceneIndex = arg1.buildIndex;
         }
         else
         {
-            print("ELSEEEEEE CHAAAAANGED");
             moneyInStart = playerEconomic.money;
             weaponsInStart = playerAttack.weaponList.Count;
+            currentSceneIndex = arg1.buildIndex;
+        }
+
+        if (arg1.buildIndex == 0)
+        {
+            transform.position = new Vector3(0f, -3f, 0f);
+            playerEconomic.money = moneyInStart;
+            playerAttack.canShoot = true;
+            playerMovement.canMove = true;
+            playerHealth.Health = playerHealth.MaxHealth;
+            for (int i = 1; i < playerAttack.weaponList.Count; i++)
+            {
+                playerAttack.weaponList.Remove(playerAttack.weaponList[i]);
+            }
+
+            weaponsInStart = 1;
+            moneyInStart = 0;
             currentSceneIndex = arg1.buildIndex;
         }
     }

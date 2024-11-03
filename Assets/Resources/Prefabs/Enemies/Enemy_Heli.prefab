@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionX: 0
-  speedY: -3
+  speedY: -7
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}
   moveXDistance: 3

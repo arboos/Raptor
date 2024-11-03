@@ -1,12 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-public class EnemyBoatMovement : EnemyMovement
+public class EnemyTankMovement : EnemyMovement
 {
-
     public float moveXDistance;
     private float currentMoveXDistance;
 
@@ -25,11 +22,9 @@ public class EnemyBoatMovement : EnemyMovement
         if (directionX <= 0)
         {
             directionX = -1f;
-            transform.position = new Vector3(11f, transform.position.y, transform.position.z);
         }
         else
         {
-            transform.position = new Vector3(-11f, transform.position.y, transform.position.z);
             GetComponent<SpriteRenderer>().flipX = true;
         }
     }

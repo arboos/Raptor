@@ -1868,6 +1868,7 @@ MonoBehaviour:
     shootCooldown: 2
     currentShootCooldown: 0
     bulletCount: 1
+  resetShop: 1
 --- !u!1 &2029101596
 GameObject:
   m_ObjectHideFlags: 0

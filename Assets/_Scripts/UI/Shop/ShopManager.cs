@@ -15,6 +15,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private HorizontalLayoutGroup parentHorizontal;
 
     [SerializeField] private List<Weapon> weapons;
+    [SerializeField] private bool resetShop = false;
     
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class ShopManager : MonoBehaviour
 
     public void LoadItems()
     {
+        if(resetShop) ResetShop();
         foreach (var item in items)
         {
             GameObject spawnedItem = Instantiate(shopItemPrefab, parentHorizontal.transform);
@@ -60,5 +62,13 @@ public class ShopManager : MonoBehaviour
         transform.position = new Vector3(0f, -3f, 0f);
         PlayerInfo.Instance.playerAttack.canShoot = true;
         PlayerInfo.Instance.playerMovement.canMove = true;
+    }
+
+    private void ResetShop()
+    {
+        foreach (var item in items)
+        {
+            item.boughtYet = false;
+        }
     }
 }

@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc7e5105888c544e82df2ed8d76a257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healCount: 10
+  healCount: 20
 --- !u!95 &6995488727145817080
 Animator:
   serializedVersion: 5

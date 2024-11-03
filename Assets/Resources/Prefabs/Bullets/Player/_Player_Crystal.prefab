@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 358819290461057210}
   - component: {fileID: 1259001754153556111}
   - component: {fileID: 5028467548119309374}
-  - component: {fileID: 7903027645464404176}
+  - component: {fileID: 3036725929689570401}
   m_Layer: 7
   m_Name: _Player_Crystal
   m_TagString: Bullet
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcb60173187cf649a72a17b1d4bbbcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  speed: 6
-  lifeTime: 5
+  damage: 6
+  speed: 4
+  lifeTime: 7
   destroyAfterHit: 1
   globalPosition: 1
   comparesWith: Enemy
@@ -94,10 +94,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2039580566, guid: c7d7797cac6684f4c8d316df3ac1e96c, type: 3}
+  m_Sprite: {fileID: -379113951, guid: 53e0de69b1f2ae44491ca81bba3fd96f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -150,7 +150,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!95 &7903027645464404176
+--- !u!95 &3036725929689570401
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ Animator:
   m_GameObject: {fileID: 1606945261363030477}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a35c1dd0ac733844db0a59b9162cc094, type: 2}
+  m_Controller: {fileID: 9100000, guid: b4b56cc2019c3bb499fb17b8d5c03ba8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

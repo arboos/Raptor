@@ -3,12 +3,12 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": 2,
           "directionX": 1
         },
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": -2,
           "directionX": -1
         }
@@ -19,7 +19,7 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": -4,
           "directionX": 0
         }
@@ -30,12 +30,12 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": -6,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": -2,
           "directionX": 2
         }
@@ -46,7 +46,7 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Simple",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": 4,
           "directionX": 0
         }

@@ -14,8 +14,11 @@ public class ItemLoader : MonoBehaviour
     [SerializeField] private TextMeshProUGUI infoText;
     [SerializeField] private TextMeshProUGUI characteristicsText;
     
+    
     [SerializeField] private Button buyButton;
     [SerializeField] private TextMeshProUGUI priceText;
+    
+    [SerializeField] private GameObject closeWindow;
 
     public void Initialize(ShopItem item)
     {
@@ -24,7 +27,7 @@ public class ItemLoader : MonoBehaviour
         nameText.text = shopItem.name;
         infoText.text = shopItem.info;
         characteristicsText.text = shopItem.characteristics;
-        priceText.text = shopItem.price.ToString();
+        priceText.text = "$" + shopItem.price.ToString();
         buyButton.onClick.AddListener(delegate
         {
             ShopManager.Instance.BuyBoost(shopItem.index, shopItem.price, this);
@@ -33,6 +36,9 @@ public class ItemLoader : MonoBehaviour
 
     public void Deacticate()
     {
-        
+        closeWindow.SetActive(true);
+        shopItem.boughtYet = true;
+        priceText.text = "Куплено";
+        buyButton.enabled = false;
     }
 }

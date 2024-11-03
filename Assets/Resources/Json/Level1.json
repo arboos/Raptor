@@ -1043,38 +1043,6 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_BigGuy",
-          "spawnPositionX": -1,
-          "directionX": 1
-        },
-        {
-          "prefabName": "Enemy_BigGuy",
-          "spawnPositionX": 1,
-          "directionX": -1
-        }
-      ],
-      "waitAfter": 2
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_BigGuy",
-          "spawnPositionX": -3,
-          "directionX": 1
-        },
-        {
-          "prefabName": "Enemy_BigGuy",
-          "spawnPositionX": 3,
-          "directionX": -1
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
           "prefabName": "Island_Rocket",
           "spawnPositionX": 0,
           "directionX": 0
@@ -1980,17 +1948,6 @@
         }
       ],
       "waitAfter": 4
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Island_FirstAid",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 2
     }
   ]
 }

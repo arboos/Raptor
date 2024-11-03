@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 232297086239007370}
   - component: {fileID: 6493883258741709315}
   m_Layer: 8
-  m_Name: Enemy_Bublebee
+  m_Name: Enemy_Bumblebee
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7adf5504ec9c7e849aac291c44eaa2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionX: 1
+  directionX: 2
   speedY: -2
   lastPosition: {x: 0, y: 0, z: 0}
   directionMovement: {x: 0, y: 0, z: 0}

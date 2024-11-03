@@ -3,14 +3,126 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Triangle",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": 2,
           "directionX": 1
         },
         {
-          "prefabName": "Enemy_Triangle",
+          "prefabName": "Enemy_TrippleTurret",
           "spawnPositionX": -2,
           "directionX": -1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": -4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": -6,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": -2,
+          "directionX": 2
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": 4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 6,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": 2
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -6,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -4,
+          "directionX": 2
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": 2
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": 2
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 0,
+          "directionX": 2
         }
       ],
       "waitAfter": 3
@@ -19,28 +131,13 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -4,
-          "directionX": 0
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 5,
+          "directionX": -1
         },
         {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -2,
-          "directionX": 0
-        },
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 0,
-          "directionX": 0
-        },
-        {
-          "prefabName": "Enemy_Small",
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": 2,
-          "directionX": 0
-        },
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 4,
           "directionX": -1
         }
       ],
@@ -50,47 +147,19 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": 5,
           "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
+        },
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -5,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Triangle",
-          "spawnPositionX": 6,
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 3,
           "directionX": -1
         },
         {
-          "prefabName": "Enemy_Triangle",
-          "spawnPositionX": -6,
-          "directionX": 1
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 1,
+          "directionX": -1
         }
       ],
       "waitAfter": 3
@@ -99,55 +168,98 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -8,
-          "directionX": 0
-        },
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -6,
-          "directionX": 0
-        },
-        {
-          "prefabName": "Enemy_Small",
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": 6,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Small",
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": -2
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 1,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -8,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 2,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
           "spawnPositionX": 8,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -4,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 2,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 4,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 7,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -7,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -2,
           "directionX": 0
         }
       ],
@@ -157,93 +269,1436 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fast",
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -4,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 4,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 4,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -4,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -1,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Island_FirstAid",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
           "spawnPositionX": 3,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -3,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -4,
           "directionX": 0
         },
         {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -5,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -1,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 1,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 2,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
           "prefabName": "Enemy_Fast",
+          "spawnPositionX": 6,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 7,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 5,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -6,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -8,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 0.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -5,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 0,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 0,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 3,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 6,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 5,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 5,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Boat",
+          "spawnPositionX": 9,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
           "spawnPositionX": 1,
           "directionX": 0
         },
         {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 4,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -7,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -1,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
           "prefabName": "Enemy_Fast",
+          "spawnPositionX": 6,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 5,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -8,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -6,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 0.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -5,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 6,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 0.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 5,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -8,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -6,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 0.5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -5,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fast",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Island_Rocket",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": -1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": -3,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 3,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": -1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": -3,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_BigGuy",
+          "spawnPositionX": 3,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 5,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -5,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 1,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 3,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -3,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 0,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 0,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 2,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": 1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Fat",
+          "spawnPositionX": -1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Island_FirstAid",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 0,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 1,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 5,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 1,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Boat",
+          "spawnPositionX": 9,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -2,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 0,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
           "spawnPositionX": -1,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": -3,
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 5,
           "directionX": 0
         }
       ],
-      "waitAfter": 0.5
+      "waitAfter": 1
     },
 
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fast",
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -6,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 2,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 0,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
           "spawnPositionX": 2,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": 4,
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -2,
           "directionX": 0
-        },
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
         {
-          "prefabName": "Enemy_Fast",
+          "prefabName": "Enemy_Bomb",
           "spawnPositionX": -2,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": -4,
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -6,
           "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 3,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -3,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Fat",
-          "spawnPositionX": 4,
-          "directionX": -1
         },
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 5,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": -5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
           "spawnPositionX": 0,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bomb",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bomb",
           "spawnPositionX": -4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -8,
           "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 0,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 7,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -8,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -8,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -6,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -8,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 1,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -1,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 8,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -8,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 6,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -6,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": -2,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 0,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Simple",
+          "spawnPositionX": 2,
+          "directionX": 0
         }
       ],
       "waitAfter": 2
@@ -252,12 +1707,60 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Heli",
           "spawnPositionX": 2,
           "directionX": -1
         },
         {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 2,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -2,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 8,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -8,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 2
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -4,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
           "spawnPositionX": -2,
           "directionX": 1
         }
@@ -268,194 +1771,13 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 5,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -5,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Fat",
+          "prefabName": "Enemy_Triangle",
           "spawnPositionX": 4,
           "directionX": -1
         },
         {
-          "prefabName": "Enemy_Fat",
-          "spawnPositionX": -4,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 5
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Fat",
-          "spawnPositionX": 6,
-          "directionX": -1
-        },
-        {
-          "prefabName": "Enemy_Fat",
-          "spawnPositionX": -6,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 5
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -4,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -4,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -4,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": -4,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 4,
-          "directionX": -1
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 4,
-          "directionX": -1
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 4,
-          "directionX": -1
-        }
-      ],
-      "waitAfter": 0.25
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Small",
-          "spawnPositionX": 4,
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 2,
           "directionX": -1
         }
       ],
@@ -465,67 +1787,40 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 0,
-          "directionX": 0
+          "prefabName": "Enemy_Boat",
+          "spawnPositionX": 9,
+          "directionX": -1
         }
       ],
-      "waitAfter": 0
+      "waitAfter": 1
     },
 
     {
       "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 6,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -6,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Triangle",
-          "spawnPositionX": 0,
-          "directionX": 0
-        },
-        {
-          "prefabName": "Enemy_Triangle",
-          "spawnPositionX": -4,
-          "directionX": 0
-        },
         {
           "prefabName": "Enemy_Triangle",
           "spawnPositionX": 4,
-          "directionX": 0
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": 2,
+          "directionX": -1
         }
       ],
-      "waitAfter": 3
+      "waitAfter": 2
     },
 
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": 3,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 2,
           "directionX": -1
         },
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": 5,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -2,
           "directionX": -1
         }
       ],
@@ -535,68 +1830,30 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": 3,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 2,
           "directionX": -1
         },
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": 5,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -2,
           "directionX": -1
         }
       ],
-      "waitAfter": 2
+      "waitAfter": 1
     },
 
     {
       "enemies": [
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 4,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 8,
           "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
+        },
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -4,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -8,
           "directionX": 0
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Triangle",
-          "spawnPositionX": 6,
-          "directionX": -1
-        },
-        {
-          "prefabName": "Enemy_Triangle",
-          "spawnPositionX": -6,
-          "directionX": 1
-        }
-      ],
-      "waitAfter": 3
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": -3,
-          "directionX": 1
-        },
-        {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": -5,
-          "directionX": 1
         }
       ],
       "waitAfter": 0.5
@@ -605,14 +1862,14 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": -3,
-          "directionX": 1
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 7,
+          "directionX": 0
         },
         {
-          "prefabName": "Enemy_Fast",
-          "spawnPositionX": -5,
-          "directionX": 1
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -7,
+          "directionX": 0
         }
       ],
       "waitAfter": 2
@@ -621,24 +1878,13 @@
     {
       "enemies": [
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 0,
-          "directionX": 0
-        }
-      ],
-      "waitAfter": 0
-    },
-
-    {
-      "enemies": [
-        {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": -5,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 8,
           "directionX": 0
         },
         {
-          "prefabName": "Enemy_TrippleTurret",
-          "spawnPositionX": 5,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -8,
           "directionX": 0
         }
       ],
@@ -648,9 +1894,57 @@
     {
       "enemies": [
         {
-          "prefabName": "Cictern_FirstAid",
-          "spawnPositionX": 0,
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -3,
           "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": 1,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Heli",
+          "spawnPositionX": -1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 3
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Boat",
+          "spawnPositionX": 9,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -4,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Triangle",
+          "spawnPositionX": -2,
+          "directionX": 1
         }
       ],
       "waitAfter": 4

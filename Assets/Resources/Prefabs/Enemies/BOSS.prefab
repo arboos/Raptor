@@ -162,10 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf41145465ca7fe43b746b3f22f0e7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 20
-  MaxHealth: 20
+  Health: 500
+  MaxHealth: 500
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
-  money: 0
+  money: 3000
   hasDeathAnim: 0
   explosionPrefab: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
 --- !u!50 &150633420038245737

@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.74999994, y: 0.74999994, z: 0.74999994}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8005693536704803540}
@@ -109,7 +109,7 @@ MonoBehaviour:
   bulletCount: 3
   betweenBulletDistance: 0
   collisionDamage: 10
-  bulletSpeed: 4
+  bulletSpeed: 8
 --- !u!114 &373142685846260536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b8c038a0ae9d4c9b4e4496f9113c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 6
-  MaxHealth: 6
+  Health: 16
+  MaxHealth: 16
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
   money: 400
   hasDeathAnim: 0

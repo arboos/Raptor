@@ -48,7 +48,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void Shoot(Weapon weapon)
     {
-        print("shoot");
         weapon.currentShootCooldown = weapon.shootCooldown;
         
         for (int i = 0; i < weapon.bulletCount; i++)

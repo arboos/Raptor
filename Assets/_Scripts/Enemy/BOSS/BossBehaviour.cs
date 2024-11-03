@@ -15,6 +15,7 @@ public class BossBehaviour : MonoBehaviour
     public GameObject rocketPrefab;
     public GameObject plasmPrefab;
     public float plasmSpeed;
+    public bool isAlive;
     
     private Vector3[] bossPoints = new[]
     {
@@ -30,15 +31,18 @@ public class BossBehaviour : MonoBehaviour
     [SerializeField] private Transform plasmSpawnPosition;
 
     private Animator animator;
+    public SpriteRenderer healthImage;
     
     private void Awake()
     {
         BossActions();
+        animator = GetComponent<Animator>();
     }
+    
 
     public async void BossActions()
     {
-        for(int i = 0; i < 9999; i++)
+        while (isAlive)
         {
             await Cycle();
         }
@@ -46,14 +50,21 @@ public class BossBehaviour : MonoBehaviour
 
     public async UniTask Cycle()
     {
+        if(!isAlive) return;
         foreach (var point in bossPoints)
         {
+            if(!isAlive) return;
             Tween moveTween = transform.DOMove(point, actionSpeed, false);
             await moveTween.ToUniTask();
             
-            if (Random.value < 0.25f)
-            {
+            if (Random.value < 0.5f)
+            { 
+                if(!isAlive) return;
+                animator.SetBool("Attack", true);
+                await UniTask.Delay(TimeSpan.FromSeconds(1f));
+                
                 await Attack();
+                animator.SetBool("Attack", false);
             }
         }
     }
@@ -62,9 +73,10 @@ public class BossBehaviour : MonoBehaviour
     {
         for (int i = 0; i < shootCount; i++)
         {
+            if(!isAlive) return;
             ShootPlasm();
             ShootRockets();
-            await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
+            await UniTask.Delay(TimeSpan.FromSeconds(actionSpeed/4f));
         }
     }
     
@@ -72,6 +84,7 @@ public class BossBehaviour : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
+            if(!isAlive) return;
             GameObject spawnedBullet = Instantiate(rocketPrefab);
             
             Vector3 spawnPos = rocketSpawnPositions[i].position;

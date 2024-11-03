@@ -8,7 +8,6 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public List<EnemyWave> Waves;
-    //private string saveFile = "Assets/Resources/Prefabs/Level1.json";
     [SerializeField] private TextAsset json;
 
     [SerializeField] private int startFrom;
@@ -22,10 +21,6 @@ public class EnemySpawner : MonoBehaviour
     public void ReadFile()
     {
         Waves = new List<EnemyWave>();
-        // Read the entire file and save its contents.
-
-        // Deserialize the JSON data 
-        //  into a pattern matching class.
         Waves = JsonUtility.FromJson<EnemySpawnOrder>(json.ToString()).waves;
             
         print("File Read");
@@ -52,17 +47,6 @@ public class EnemySpawner : MonoBehaviour
             }
             yield return new WaitForSeconds(Waves[i].waitAfter);
         }
-        // foreach (var wave in Waves)
-        // {
-        //     foreach (var enemy in wave.enemies)
-        //     {
-        //         GameObject spawnedEnemy = Instantiate(FindPrefabByName(enemy.prefabName));
-        //         spawnedEnemy.GetComponent<EnemyMovement>().directionX = enemy.directionX;
-        //         spawnedEnemy.transform.position = new Vector3(enemy.spawnPositionX, transform.position.y, transform.position.z);
-        //     }
-        //
-        //     yield return new WaitForSeconds(wave.waitAfter);
-        // }
     }
 }
 

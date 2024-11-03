@@ -5199,7 +5199,7 @@ MonoBehaviour:
   - {fileID: 6548334666653307192, guid: 22bf6ce0f6b71f140949ea2db6425c6d, type: 3}
   chunksSpawnedCount: 0
   seed: 0
-  zoom: 30
+  zoom: 5
   spawnPosition: {fileID: 447743922}
   X_length: 60
   Y_length: 24
@@ -6490,7 +6490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1084462638
 Transform:
   m_ObjectHideFlags: 0
@@ -8009,7 +8009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Waves: []
   json: {fileID: 4900000, guid: fa82c856a9b38de4293ffec74131d866, type: 3}
-  startFrom: 70
+  startFrom: -2
 --- !u!1 &2059209886
 GameObject:
   m_ObjectHideFlags: 0

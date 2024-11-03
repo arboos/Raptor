@@ -102,7 +102,6 @@ public class MapGenerator : MonoBehaviour
         tileList.transform.SetParent(transform);
         tileList.transform.position = new Vector3(-(float)X_length * 0.25f, transform.GetChild(2).transform.position.y + (float)Y_length/2f, 0f);
         
-
         for (int i = 0; i < X_length; i++)
         {
             for (int j = 0; j < Y_length; j++)

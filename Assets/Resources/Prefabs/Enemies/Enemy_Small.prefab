@@ -224,6 +224,8 @@ MonoBehaviour:
   Health: 2
   MaxHealth: 2
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
+  money: 300
+  hasDeathAnim: 0
 --- !u!61 &3188946439249816752
 BoxCollider2D:
   m_ObjectHideFlags: 0

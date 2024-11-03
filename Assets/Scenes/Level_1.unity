@@ -9854,7 +9854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Waves: []
   json: {fileID: 4900000, guid: ba826d242c5c76944bfe8eb25ca50eb9, type: 3}
-  startFrom: 0
+  startFrom: -2
   hasBossFight: 0
 --- !u!1 &2054126548
 GameObject:

@@ -52,7 +52,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (!hasBossFight)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
             UIManager.Instance.WictoryText.SetActive(true);
             SoundsBaseCollection.Instance.Soundtrack.Stop();
             SoundsBaseCollection.Instance.Win.Play();

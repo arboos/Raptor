@@ -693,6 +693,17 @@
     {
       "enemies": [
         {
+          "prefabName": "Cictern_FirstAid",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
           "prefabName": "Enemy_Fast",
           "spawnPositionX": 6,
           "directionX": 0

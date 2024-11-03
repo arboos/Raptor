@@ -29,8 +29,6 @@ public class PlayerAttack : MonoBehaviour
         {
             weapon.currentShootCooldown -= Time.deltaTime;
         }
-        
-        print(value);
     }
     
     public void HandleAttackValue(InputAction.CallbackContext context)

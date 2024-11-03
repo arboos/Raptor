@@ -31,7 +31,7 @@
       ],
       "waitAfter": 3
     },
-    
+
     {
       "enemies": [
         {
@@ -53,7 +53,7 @@
       "waitAfter": 3
     },
 
-    
+
     {
       "enemies": [
         {
@@ -751,6 +751,144 @@
         }
       ],
       "waitAfter": 4
-    }
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -3,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 6,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -6,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": -8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0.25
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Small",
+          "spawnPositionX": 8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+
   ]
 }

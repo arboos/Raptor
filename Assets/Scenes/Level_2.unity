@@ -7612,7 +7612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd8b4800c7bc2f4f83efe7e6b262d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 5
+  Health: 100
   MaxHealth: 100
   explosionPrefab: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
 --- !u!114 &1118036277
@@ -9861,7 +9861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Waves: []
   json: {fileID: 4900000, guid: 30e679d92e336bc4c9eb6ad568c1186a, type: 3}
-  startFrom: -4
+  startFrom: 0
   hasBossFight: 0
 --- !u!1 &2054126548
 GameObject:

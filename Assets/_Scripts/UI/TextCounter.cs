@@ -14,21 +14,29 @@ public class TextCounter : MonoBehaviour
     void Awake()
     {
         textMP = GetComponent<TextMeshPro>();
-        Count();   
+    }
+
+    private void Start()
+    {
+        Count();
     }
 
     private async void Count()
     {
         textMP.text = "3";
+        SoundsBaseCollection.Instance.Counter.Play();
         await UniTask.Delay(TimeSpan.FromSeconds(1f));
         
         textMP.text = "2";
+        SoundsBaseCollection.Instance.Counter.Play();
         await UniTask.Delay(TimeSpan.FromSeconds(1f));
         
         textMP.text = "1";
+        SoundsBaseCollection.Instance.Counter.Play();
         await UniTask.Delay(TimeSpan.FromSeconds(1f));
 
         textMP.text = "В бой!";
+        SoundsBaseCollection.Instance.ToBattle.Play();
         await UniTask.Delay(TimeSpan.FromSeconds(1f));
 
         enemySpawner.SetActive(true);

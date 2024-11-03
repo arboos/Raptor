@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   boughtYet: 0
-  price: 0
-  icon: {fileID: 0}
+  price: 12400
+  icon: {fileID: 65824808, guid: 231b4480f4af4db44808144215a04742, type: 3}
   name: "\u0420\u0430\u043A\u0435\u0442\u044B"
-  info: 
-  characteristics: 
+  info: "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u043E\u0435 \u043A\u043E\u043B-\u0432\u043E
+    \u0432\u0437\u0440\u044B\u0432\u043D\u043E\u0433\u043E \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430
+    \u043F\u043E\u0432\u044B\u0448\u0430\u0435\u0442 \u043D\u0430\u043D\u043E\u0441\u0438\u043C\u044B\u0439
+    \u0440\u0430\u043A\u0435\u0442\u043E\u0439 \u0443\u0440\u043E\u043D"
+  characteristics: "+50% \u043A \u0443\u0440\u043E\u043D\u0443"

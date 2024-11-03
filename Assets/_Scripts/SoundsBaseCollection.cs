@@ -14,12 +14,15 @@ public class SoundsBaseCollection : MonoBehaviour
     
     [Header("UI")]
     public AudioSource ButtonClick;
+    public AudioSource Counter;
+    public AudioSource ToBattle;
     
     [Header("Player")]
     public AudioSource Damage;
     public AudioSource Death;
     public AudioSource Explosion;
     public AudioSource Heal;
+    public AudioSource Coin;
     
     private void Awake()
     {

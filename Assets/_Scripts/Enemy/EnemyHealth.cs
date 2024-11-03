@@ -8,6 +8,7 @@ public class EnemyHealth : HealthSystem
 {
     [SerializeField] private GameObject destroyParticle;
     private Tween colorChangeTween = null;
+    public int money;
 
     public override void TakeDamage(int count)
     {
@@ -23,6 +24,13 @@ public class EnemyHealth : HealthSystem
             spawnedParticle.transform.position = transform.position;
             spawnedParticle.GetComponent<SelfDestroy>().moveVector = GetComponent<EnemyMovement>().directionMovement;
             SoundsBaseCollection.Instance.Explosion.Play();
+        }
+
+        if (money > 0)
+        {
+            GameObject spawnedMoney = Instantiate(GameManager.Instance.MoneyPrefab);
+            spawnedMoney.transform.position = transform.position;
+            spawnedMoney.GetComponent<Coin>().count = money;
         }
 
         Destroy(gameObject);

@@ -12,6 +12,8 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private int startFrom;
 
+    [SerializeField] private bool hasBossFight;
+
     private void Start()
     {
         ReadFile();
@@ -47,6 +49,19 @@ public class EnemySpawner : MonoBehaviour
             }
             yield return new WaitForSeconds(Waves[i].waitAfter);
         }
+
+        if (!hasBossFight)
+        {
+            yield return new WaitForSeconds(3f);
+            UIManager.Instance.WictoryText.SetActive(true);
+            PlayerInfo.Instance.playerAttack.canShoot = false;
+            PlayerInfo.Instance.playerMovement.canMove = false;
+            
+            
+            yield return new WaitForSeconds(3f);
+            UIManager.Instance.WictoryText.SetActive(false);
+            UIManager.Instance.WictoryScreen.SetActive(true);
+        } 
     }
 }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 1
   boughtYet: 0
-  price: 120000
+  price: 50000
   icon: {fileID: 1256651290, guid: 53e0de69b1f2ae44491ca81bba3fd96f, type: 3}
   name: "\u0420\u0430\u043A\u0435\u0442\u044B VBN 2"
   info: "\u0420\u0430\u043A\u0435\u0442\u044B \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0433\u043E

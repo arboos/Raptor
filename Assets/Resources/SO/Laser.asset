@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Laser
   m_EditorClassIdentifier: 
   index: 2
-  boughtYet: 0
-  price: 100000
+  boughtYet: 1
+  price: 40000
   icon: {fileID: -71869216, guid: 53e0de69b1f2ae44491ca81bba3fd96f, type: 3}
   name: "\u041B\u0430\u0437\u0435\u0440\u043D\u0430\u044F \u043F\u0443\u0448\u043A\u0430"
   info: "\u0414\u0430\u043D\u043D\u043E\u0435 \u043E\u0440\u0443\u0436\u0438\u0435

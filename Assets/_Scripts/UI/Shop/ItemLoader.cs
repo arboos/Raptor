@@ -32,6 +32,8 @@ public class ItemLoader : MonoBehaviour
         {
             ShopManager.Instance.BuyBoost(shopItem.index, shopItem.price, this);
         });
+        
+        if(shopItem.boughtYet) Deacticate();
     }
 
     public void Deacticate()

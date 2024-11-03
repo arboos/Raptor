@@ -52,6 +52,10 @@ public class PlayerAttack : MonoBehaviour
         
         for (int i = 0; i < weapon.bulletCount; i++)
         {
+            if (weapon.bulletPrefab.gameObject.name == "_Player_Laser")
+            {
+                weapon.bulletSpawnPosition = transform.GetChild(1);
+            }
             GameObject spawnedBullet = Instantiate(weapon.bulletPrefab);
             if (!weapon.bulletPrefab.GetComponent<Bullet>().globalPosition)
                 spawnedBullet.transform.SetParent(gameObject.transform);

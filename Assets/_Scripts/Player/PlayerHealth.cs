@@ -26,7 +26,7 @@ public class PlayerHealth : HealthSystem
     {
         PlayerInfo.Instance.playerMovement.canMove = false;
         PlayerInfo.Instance.playerAttack.canShoot = false;
-
+        SoundsBaseCollection.Instance.Soundtrack.Stop();
         GameManager.Instance.EnemySpawner.gameObject.SetActive(false);
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
@@ -41,23 +41,24 @@ public class PlayerHealth : HealthSystem
             Destroy(bullet);
         }
         
-        
+        SoundsBaseCollection.Instance.Lose.Play();
+        await UniTask.Delay(TimeSpan.FromSeconds(1f));
         for (int i = 0; i < 25; i++)
         {
             GameObject spawnedEx = Instantiate(explosionPrefab);
             spawnedEx.transform.localScale *= 1.2f;
-            explosionPrefab.transform.position = transform.position +
-                                                 new Vector3(Random.Range(-0.8f, 0.8f), Random.Range(-0.8f, 0.8f), 0);
+            spawnedEx.transform.position = transform.position +
+                                           new Vector3(Random.Range(-0.8f, 0.8f), Random.Range(-0.8f, 0.8f), 0);
             spawnedEx.GetComponent<SpriteRenderer>().sortingOrder = 50;
             SoundsBaseCollection.Instance.Explosion.Play();
             await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
         }
-
         
         SoundsBaseCollection.Instance.Death.Play();
         
-        await UniTask.Delay(TimeSpan.FromSeconds(1f));
         
+        await UniTask.Delay(TimeSpan.FromSeconds(1f));
+        SoundsBaseCollection.Instance.Lose.Play();
         UIManager.Instance.LoseScreen.SetActive(true);
         
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

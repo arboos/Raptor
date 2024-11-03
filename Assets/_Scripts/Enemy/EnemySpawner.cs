@@ -54,6 +54,8 @@ public class EnemySpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(3f);
             UIManager.Instance.WictoryText.SetActive(true);
+            SoundsBaseCollection.Instance.Soundtrack.Stop();
+            SoundsBaseCollection.Instance.Win.Play();
             PlayerInfo.Instance.playerAttack.canShoot = false;
             PlayerInfo.Instance.playerMovement.canMove = false;
             

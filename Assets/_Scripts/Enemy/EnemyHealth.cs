@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyHealth : HealthSystem
@@ -9,6 +10,8 @@ public class EnemyHealth : HealthSystem
     [SerializeField] private GameObject destroyParticle;
     private Tween colorChangeTween = null;
     public int money;
+    
+    public bool hasDeathAnim = false;
 
     public override void TakeDamage(int count)
     {
@@ -32,8 +35,16 @@ public class EnemyHealth : HealthSystem
             spawnedMoney.transform.position = transform.position;
             spawnedMoney.GetComponent<Coin>().count = money;
         }
-
-        Destroy(gameObject);
+        
+        if(!hasDeathAnim) Destroy(gameObject);
+        else
+        {
+            GetComponent<Animator>().SetTrigger("Dead");
+            GetComponent<EnemyAttack>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
     
     public async UniTask ToColor(Color color, float duration)

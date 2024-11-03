@@ -11,6 +11,7 @@ public class SoundsBaseCollection : MonoBehaviour
     public static SoundsBaseCollection Instance { get; private set; }
 
     public AudioSource Soundtrack;
+    public AudioClip[] Soundtracks;
     
     [Header("UI")]
     public AudioSource ButtonClick;
@@ -23,6 +24,8 @@ public class SoundsBaseCollection : MonoBehaviour
     public AudioSource Explosion;
     public AudioSource Heal;
     public AudioSource Coin;
+    public AudioSource Lose;
+    public AudioSource Win;
     
     private void Awake()
     {
@@ -30,6 +33,8 @@ public class SoundsBaseCollection : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Soundtrack.clip = Soundtracks[SceneManager.GetActiveScene().buildIndex];
+            Soundtrack.Play();
         }
         else
         {

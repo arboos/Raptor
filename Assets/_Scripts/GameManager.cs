@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public EnemySpawner EnemySpawner;
+    public GameObject MoneyPrefab;
     
     private void Awake()
     {

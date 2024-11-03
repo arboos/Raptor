@@ -13,6 +13,8 @@ public class Coin : MonoBehaviour
         {
             PlayerInfo.Instance.playerEconomic.money += count;
             SoundsBaseCollection.Instance.Coin.Play();
+            UIManager.Instance.MoneyText.text = PlayerInfo.Instance.playerEconomic.money.ToString();
+            UIManager.Instance.MoneyText_Shadow.text = PlayerInfo.Instance.playerEconomic.money.ToString();
             Destroy(gameObject);
         }
     }

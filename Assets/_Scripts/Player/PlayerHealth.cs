@@ -10,8 +10,6 @@ using Random = UnityEngine.Random;
 
 public class PlayerHealth : HealthSystem
 {
-
-    [SerializeField] private Image healthBar;
     [SerializeField] private GameObject explosionPrefab;
 
     private Tween colorChangeTween = null;
@@ -44,7 +42,7 @@ public class PlayerHealth : HealthSystem
         }
         
         
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 25; i++)
         {
             GameObject spawnedEx = Instantiate(explosionPrefab);
             spawnedEx.transform.localScale *= 1.2f;
@@ -68,7 +66,7 @@ public class PlayerHealth : HealthSystem
     public override void TakeDamage(int count)
     {
         base.TakeDamage(count);
-        healthBar.fillAmount = (float)Health / (float)MaxHealth;
+        UIManager.Instance.healthBar.fillAmount = (float)Health / (float)MaxHealth;
         SoundsBaseCollection.Instance.Damage.Play();
         ToColor(Color.red, 0.2f);
     }
@@ -92,7 +90,7 @@ public class PlayerHealth : HealthSystem
     public override void TakeHeal(int count)
     {
         base.TakeHeal(count);
-        healthBar.fillAmount = (float)Health / (float)MaxHealth;
+        UIManager.Instance.healthBar.fillAmount = (float)Health / (float)MaxHealth;
         SoundsBaseCollection.Instance.Heal.Play();
         ToColor(Color.green, 0.2f);
     }

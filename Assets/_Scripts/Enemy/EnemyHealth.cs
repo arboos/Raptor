@@ -12,38 +12,47 @@ public class EnemyHealth : HealthSystem
     public int money;
     
     public bool hasDeathAnim = false;
+    public bool isAlive = true;
 
     public override void TakeDamage(int count)
     {
-        base.TakeDamage(count);
-        ToColor(Color.red, 0.1f);
+        if (isAlive)
+        {
+            base.TakeDamage(count);
+            ToColor(Color.red, 0.1f);
+        }
     }
 
     protected override void Die()
     {
-        if (destroyParticle != null)
+        if (isAlive)
         {
-            GameObject spawnedParticle = Instantiate(destroyParticle);
-            spawnedParticle.transform.position = transform.position;
-            spawnedParticle.GetComponent<SelfDestroy>().moveVector = GetComponent<EnemyMovement>().directionMovement;
-            SoundsBaseCollection.Instance.Explosion.Play();
-        }
+            isAlive = false;
+            if (destroyParticle != null)
+            {
+                GameObject spawnedParticle = Instantiate(destroyParticle);
+                spawnedParticle.transform.position = transform.position;
+                spawnedParticle.GetComponent<SelfDestroy>().moveVector =
+                    GetComponent<EnemyMovement>().directionMovement;
+                SoundsBaseCollection.Instance.Explosion.Play();
+            }
 
-        if (money > 0)
-        {
-            GameObject spawnedMoney = Instantiate(GameManager.Instance.MoneyPrefab);
-            spawnedMoney.transform.position = transform.position;
-            spawnedMoney.GetComponent<Coin>().count = money;
-        }
-        
-        if(!hasDeathAnim) Destroy(gameObject);
-        else
-        {
-            GetComponent<Animator>().SetTrigger("Dead");
-            GetComponent<EnemyAttack>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = false;
+            if (money > 0)
+            {
+                GameObject spawnedMoney = Instantiate(GameManager.Instance.MoneyPrefab);
+                spawnedMoney.transform.position = transform.position;
+                spawnedMoney.GetComponent<Coin>().count = money;
+            }
+
+            if (!hasDeathAnim) Destroy(gameObject);
+            else
+            {
+                GetComponent<Animator>().SetTrigger("Dead");
+                GetComponent<EnemyAttack>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
     }
     

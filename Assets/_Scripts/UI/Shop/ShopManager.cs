@@ -52,6 +52,13 @@ public class ShopManager : MonoBehaviour
     public void LoadScene(int index)
     {
         SceneManager.LoadScene(index);
+        UnlockPlayer();
     }
 
+    public void UnlockPlayer()
+    {
+        transform.position = new Vector3(0f, -3f, 0f);
+        PlayerInfo.Instance.playerAttack.canShoot = true;
+        PlayerInfo.Instance.playerMovement.canMove = true;
+    }
 }

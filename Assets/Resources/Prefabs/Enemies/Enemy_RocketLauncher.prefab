@@ -169,10 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b8c038a0ae9d4c9b4e4496f9113c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 4
-  MaxHealth: 4
+  Health: 12
+  MaxHealth: 12
   destroyParticle: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
-  money: 400
+  money: 500
   hasDeathAnim: 0
 --- !u!61 &7921106690239823495
 BoxCollider2D:

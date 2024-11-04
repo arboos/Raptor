@@ -56,5 +56,7 @@ public class EnemyTankMovement : EnemyMovement
                 new Vector3((moveXDistance / moveXTime) * Time.deltaTime * directionX, 0f, 0f);
             yield return new WaitForEndOfFrame();
         }
+
+        GetComponent<Animator>().SetBool("Move", false);
     }
 }

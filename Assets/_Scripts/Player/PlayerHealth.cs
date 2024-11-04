@@ -88,6 +88,10 @@ public class PlayerHealth : HealthSystem
         SoundsBaseCollection.Instance.Damage.Play();
         ToColor(Color.red, 0.2f);
         if (Health <= 0.5 * MaxHealth) smokeTale.SetActive(true);
+        else
+        {
+            smokeTale.SetActive(true);
+        }
     }
 
     public async UniTask ToColor(Color color, float duration)

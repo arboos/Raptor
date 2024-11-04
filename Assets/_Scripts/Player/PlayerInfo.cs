@@ -62,6 +62,7 @@ public class PlayerInfo : MonoBehaviour
             moneyInStart = playerEconomic.money;
             weaponsInStart = playerAttack.weaponList.Count;
             currentSceneIndex = arg1.buildIndex;
+            playerHealth.Health = playerHealth.MaxHealth;
         }
 
         if (arg1.buildIndex == 0)

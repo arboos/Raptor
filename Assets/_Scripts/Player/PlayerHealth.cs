@@ -90,7 +90,7 @@ public class PlayerHealth : HealthSystem
         if (Health <= 0.5 * MaxHealth) smokeTale.SetActive(true);
         else
         {
-            smokeTale.SetActive(true);
+            smokeTale.SetActive(false);
         }
     }
 

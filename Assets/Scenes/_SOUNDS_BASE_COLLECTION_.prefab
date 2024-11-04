@@ -57,11 +57,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Soundtrack: {fileID: 7874143595884929279}
   Soundtracks:
+  - {fileID: 8300000, guid: 7b180f1a1a061ed459280b93fb61aee5, type: 3}
   - {fileID: 8300000, guid: 2d629cc18f3d61b418e2a42de3b04668, type: 3}
-  - {fileID: 8300000, guid: 2d629cc18f3d61b418e2a42de3b04668, type: 3}
-  - {fileID: 8300000, guid: 2d629cc18f3d61b418e2a42de3b04668, type: 3}
+  - {fileID: 8300000, guid: 314f3605ecc0a9448a85f95f1812b431, type: 3}
   - {fileID: 8300000, guid: 76f7cddf63f25b54fbf3488c1b9b514a, type: 3}
-  - {fileID: 8300000, guid: 2d629cc18f3d61b418e2a42de3b04668, type: 3}
+  - {fileID: 8300000, guid: 314f3605ecc0a9448a85f95f1812b431, type: 3}
   - {fileID: 8300000, guid: eb6fc0a51770cb54fac811cc8362a897, type: 3}
   ButtonClick: {fileID: 393514436326354857}
   Counter: {fileID: 8460179320053478657}

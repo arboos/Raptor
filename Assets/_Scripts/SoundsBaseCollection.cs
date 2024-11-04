@@ -50,6 +50,13 @@ public class SoundsBaseCollection : MonoBehaviour
         {
             butt.GetComponent<Button>().onClick.AddListener(delegate{SoundsBaseCollection.Instance.ButtonClick.Play();});
         }
+        SceneManager.activeSceneChanged += SceneManagerOnactiveSceneChanged;
     }
 
+
+    private void SceneManagerOnactiveSceneChanged(Scene arg0, Scene arg1)
+    {
+        Soundtrack.clip = Soundtracks[SceneManager.GetActiveScene().buildIndex];
+        Soundtrack.Play();
+    }
 }

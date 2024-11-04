@@ -835,12 +835,12 @@
       "enemies": [
         {
           "prefabName": "Enemy_RocketLauncher",
-          "spawnPositionX": -4,
+          "spawnPositionX": -3,
           "directionX": 0
         },
         {
           "prefabName": "Enemy_RocketLauncher",
-          "spawnPositionX": 4,
+          "spawnPositionX": 3,
           "directionX": 0
         }
       ],

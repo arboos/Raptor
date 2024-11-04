@@ -11,6 +11,8 @@ using Random = UnityEngine.Random;
 public class PlayerHealth : HealthSystem
 {
     [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private GameObject[] parts;
+    public GameObject smokeTale;
 
     private Tween colorChangeTween = null;
     
@@ -54,6 +56,15 @@ public class PlayerHealth : HealthSystem
             await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
         }
         
+        smokeTale.SetActive(false);
+        PlayerInfo.Instance.playerAnimations.PlayerAnimator.SetBool("Dead", true);
+        foreach (var part in parts)
+        {
+            GameObject spawnedPart = Instantiate(part);
+            spawnedPart.GetComponent<Rigidbody2D>().velocity = new Vector3(
+                Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f).normalized * Random.Range(2.0f, 3.0f);
+        }
+        
         SoundsBaseCollection.Instance.Death.Play();
         
         
@@ -61,7 +72,7 @@ public class PlayerHealth : HealthSystem
         SoundsBaseCollection.Instance.Lose.Play();
         UIManager.Instance.LoseScreen.SetActive(true);
         
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
     }
 
     public override void TakeDamage(int count)
@@ -70,6 +81,7 @@ public class PlayerHealth : HealthSystem
         UIManager.Instance.healthBar.fillAmount = (float)Health / (float)MaxHealth;
         SoundsBaseCollection.Instance.Damage.Play();
         ToColor(Color.red, 0.2f);
+        if (Health <= 0.5 * MaxHealth) smokeTale.SetActive(true);
     }
 
     public async UniTask ToColor(Color color, float duration)

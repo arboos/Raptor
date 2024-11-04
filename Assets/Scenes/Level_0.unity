@@ -7605,9 +7605,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd8b4800c7bc2f4f83efe7e6b262d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
-  MaxHealth: 100
+  Health: 15
+  MaxHealth: 20
   explosionPrefab: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
+  smokeTale: {fileID: 1084462637}
 --- !u!114 &1118036277
 MonoBehaviour:
   m_ObjectHideFlags: 0

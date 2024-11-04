@@ -80,5 +80,7 @@ public class PlayerInfo : MonoBehaviour
             moneyInStart = 0;
             currentSceneIndex = arg1.buildIndex;
         }
+        SoundsBaseCollection.Instance.Soundtrack.Play();
+        playerHealth.smokeTale.SetActive(false);
     }
 }

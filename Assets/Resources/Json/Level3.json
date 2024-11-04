@@ -53,6 +53,17 @@
       "waitAfter": 3
     },
 
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": -5,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 4
+    },
+
 
     {
       "enemies": [
@@ -94,7 +105,28 @@
           "directionX": 0
         }
       ],
-      "waitAfter": 3
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
     },
 
     {
@@ -108,6 +140,17 @@
           "prefabName": "Enemy_Triangle",
           "spawnPositionX": -3,
           "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": 5,
+          "directionX": -1
         }
       ],
       "waitAfter": 4
@@ -328,6 +371,44 @@
     {
       "enemies": [
         {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 3,
+          "directionX": 1
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -3,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
           "prefabName": "Enemy_Fat",
           "spawnPositionX": 4,
           "directionX": -1
@@ -452,7 +533,34 @@
           "directionX": 0
         }
       ],
-      "waitAfter": 3
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 7,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
     },
 
     {
@@ -469,6 +577,17 @@
         }
       ],
       "waitAfter": 5
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": 8,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 4
     },
 
     {
@@ -670,6 +789,17 @@
     {
       "enemies": [
         {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": -3,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
           "prefabName": "Enemy_Triangle",
           "spawnPositionX": 6,
           "directionX": -1
@@ -680,7 +810,34 @@
           "directionX": 1
         }
       ],
-      "waitAfter": 3
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -7,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -1,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
     },
 
     {
@@ -883,6 +1040,151 @@
         {
           "prefabName": "Enemy_Small",
           "spawnPositionX": 8,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": -5,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 0
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": 5,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": 7,
+          "directionX": -1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 6,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 0,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -3,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -6,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Tank",
+          "spawnPositionX": -7,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": -4,
+          "directionX": 0
+        },
+        {
+          "prefabName": "Enemy_TrippleTurret",
+          "spawnPositionX": 4,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 4
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": -3,
+          "directionX": -1
+        },
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 3,
+          "directionX": 1
+        }
+      ],
+      "waitAfter": 1
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "Enemy_Bumblebee",
+          "spawnPositionX": 0,
+          "directionX": 0
+        }
+      ],
+      "waitAfter": 6
+    },
+
+    {
+      "enemies": [
+        {
+          "prefabName": "BOSS",
+          "spawnPositionX": 0,
           "directionX": 0
         }
       ],

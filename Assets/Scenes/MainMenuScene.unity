@@ -122,6 +122,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &14214221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 561888266948850520, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_Name
+      value: _SOUNDS_BASE_COLLECTION_
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877195501254259315, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f451e920164ec194fbb3fccef6d716a3, type: 3}
 --- !u!1 &173934194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1120,7 @@ GameObject:
   - component: {fileID: 1371607963}
   - component: {fileID: 1371607962}
   - component: {fileID: 1371607961}
+  - component: {fileID: 1371607964}
   m_Layer: 5
   m_Name: AuthorsButton
   m_TagString: Untagged
@@ -1201,7 +1259,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.8700229, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1255,6 +1313,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371607959}
   m_CullTransparentMesh: 1
+--- !u!114 &1371607964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371607959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6978fba225a1be41b02c6e79f7457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1399974732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,6 +1617,7 @@ GameObject:
   - component: {fileID: 1488266900}
   - component: {fileID: 1488266899}
   - component: {fileID: 1488266898}
+  - component: {fileID: 1488266901}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1684,7 +1755,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.8700229, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1726,6 +1797,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488266896}
   m_CullTransparentMesh: 1
+--- !u!114 &1488266901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488266896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6978fba225a1be41b02c6e79f7457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1575552859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,6 +1955,7 @@ GameObject:
   - component: {fileID: 1596107010}
   - component: {fileID: 1596107008}
   - component: {fileID: 1596107011}
+  - component: {fileID: 1596107012}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -1920,7 +2004,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.8700229, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1999,7 +2083,7 @@ MonoBehaviour:
     topLeft: {r: 0.5529412, g: 0.1764706, b: 0.078431375, a: 1}
     topRight: {r: 0.5529412, g: 0.1764706, b: 0.078431375, a: 1}
     bottomLeft: {r: 0.83396226, g: 0.62545604, b: 0.5397152, a: 1}
-    bottomRight: {r: 0.83396226, g: 0.62545604, b: 0.5397152, a: 1}
+    bottomRight: {r: 0.8352941, g: 0.62352943, b: 0.5411765, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -2051,6 +2135,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1596107012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596107006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6978fba225a1be41b02c6e79f7457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1980920565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,6 +2235,7 @@ GameObject:
   - component: {fileID: 1982284145}
   - component: {fileID: 1982284144}
   - component: {fileID: 1982284143}
+  - component: {fileID: 1982284146}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -2277,7 +2374,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.8700229, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2331,6 +2428,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982284141}
   m_CullTransparentMesh: 1
+--- !u!114 &1982284146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982284141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6978fba225a1be41b02c6e79f7457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075608056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,3 +2552,4 @@ SceneRoots:
   - {fileID: 2075608059}
   - {fileID: 520020556}
   - {fileID: 706114367}
+  - {fileID: 14214221}

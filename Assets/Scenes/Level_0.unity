@@ -7605,9 +7605,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd8b4800c7bc2f4f83efe7e6b262d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 15
-  MaxHealth: 20
+  Health: 2
+  MaxHealth: 2
   explosionPrefab: {fileID: 9059532874620554867, guid: 8a25addecf0f66c4dbffe30a03ee8e02, type: 3}
+  parts:
+  - {fileID: 2505891233643519436, guid: 43b2d33679b03b8499437bfdd8b16eb7, type: 3}
+  - {fileID: 8346718291270960813, guid: bf48d311ee5dc8e469d3358a19aaaf7c, type: 3}
+  - {fileID: 7039105167803279725, guid: d4fe9728310819e489798fcaca807505, type: 3}
+  - {fileID: 7210139948647979937, guid: 9e24ea805443e0f4e84296a6f270f6ae, type: 3}
+  - {fileID: 1413333525051917615, guid: 9f246d6938dc70a4294eb2882c6e4705, type: 3}
+  - {fileID: 6635275338919062153, guid: 5b22823916f5f8d48ace4f7841b0d8b5, type: 3}
   smokeTale: {fileID: 1084462637}
 --- !u!114 &1118036277
 MonoBehaviour:

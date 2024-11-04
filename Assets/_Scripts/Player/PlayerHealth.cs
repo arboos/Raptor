@@ -61,10 +61,16 @@ public class PlayerHealth : HealthSystem
         foreach (var part in parts)
         {
             GameObject spawnedPart = Instantiate(part);
-            spawnedPart.GetComponent<Rigidbody2D>().velocity = new Vector3(
-                Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f).normalized * Random.Range(2.0f, 3.0f);
+            
+            spawnedPart.transform.position = transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+            
+            spawnedPart.GetComponent<Rigidbody2D>().velocity = 
+                new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f).normalized * Random.Range(2.0f, 3.0f);
+            
+            spawnedPart.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-360f, 360f));
         }
-        
+
+        transform.GetChild(2).gameObject.SetActive(false);
         SoundsBaseCollection.Instance.Death.Play();
         
         

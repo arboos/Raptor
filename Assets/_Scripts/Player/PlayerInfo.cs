@@ -82,5 +82,8 @@ public class PlayerInfo : MonoBehaviour
         }
         SoundsBaseCollection.Instance.Soundtrack.Play();
         playerHealth.smokeTale.SetActive(false);
+        playerAnimations.PlayerAnimator.SetBool("Dead", false);
+        transform.GetChild(2).gameObject.SetActive(true);
+
     }
 }
